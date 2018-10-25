@@ -53,7 +53,7 @@ spec:
     }
     stage('Create Docker Image'){
       steps {
-	container('maven') {
+	container('docker') {
 	  sh 'docker build -t my-app:$BUILD_NUMBER .'
 	}
       }
