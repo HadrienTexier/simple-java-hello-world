@@ -67,7 +67,7 @@ spec:
     stage('Run Docker Image'){
 	    when {
         anyOf {
-          branch 'master'
+          branch 'master';
         }
       }
       steps {
